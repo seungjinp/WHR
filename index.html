@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Project 2 - World Happiness Report</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/topojson.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <svg id="choropleth" height="620" width="1350" style="margin:20px"></svg>
+    <svg id="colorLegend" height="70" width="600" style="background: #fff; margin-left:410px;"></svg>
+    <!-- <div class="autoslider">
+        <input type="range" min="2018" max="2020" name="Year" value="2019" step="1" id="slider">
+        <label for="slider" style="word-spacing: 20px; font-family: Arial; font-size: 13px;"> 2018 2019 2020
+        </label>
+    </div> -->
+    <div class="map-button" id="button-bar"></div>
+
+
+
+    <div class="title"> Graph 2: Relationships between the factors used to determine the overall rankings </div>
+    <div class="overview">
+        <p class="overviewdetail"> This scatter plot explores some of the relationships between the factors that were used to calculate the overall happiness score.
+          Corruption, Social Support, Generosity, and Freedom to make Life Choices are the national average of binary (0 or 1) responses to the questions noted below.
+           Each point is colored based on its regions, and the size of the circles are determined by population sizes.
+        <p><i>Hover over each point to see more information.</i></p>
+        <p>
+    </div>
+    <div id="container">
+        <div id="scatter-plot"></div>
+        <div id="options">
+            <h4>Filter by region</h4>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c1" value="Western Europe" checked>
+                <label for="c1" class="type--option">Western Europe</label>
+            </p>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c2" value="North America and ANZ" checked>
+                <label for="c2" class="type--option">North America and ANZ</label>
+            </p>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c3" value="Middle East and North Africa" checked>
+                <label for="c3" class="type--option">Middle East and North Africa</label>
+            </p>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c4" value="Latin America and Caribbean" checked>
+                <label for="c4" class="type--option">Latin America and Caribbean</label>
+            </p>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c5" value="Central and Eastern Europe" checked>
+                <label for="c5" class="type--option">Central and Eastern Europe</label>
+            </p>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c6" value="East Asia" checked>
+                <label for="c6" class="type--option">East Asia</label>
+            </p>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c7" value="South Asia" checked>
+                <label for="c7" class="type--option">South Asia</label>
+            </p>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c8" value="Southeast Asia" checked>
+                <label for="c8" class="type--option">Southeast Asia</label>
+            </p>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c9" value="Sub-Saharan Africa" checked>
+                <label for="c9" class="type--option">Sub-Saharan Africa</label>
+            </p>
+            <p class="input">
+                <input type="checkbox" class="checked" id="c10" value="Commonwealth of Independent States" checked>
+                <label for="c10" class="type--option">Independent States</label>
+            </p>
+        </div>
+    </div>
+    <p id="button-context">Use these buttons to explore other factors:</p>
+    <div id="join-buttons">
+        <button id="corruption" class="data-join">Corruption</button>
+        <button id="social" class="data-join">Social Support</button>
+        <button id="generosity" class="data-join">Generosity</button>
+        <button id="gdp" class="data-join">Logged GDP per Capita</button>
+        <button id="life" class="data-join">Healthy Life Expectancy</button>
+        <button id="freedom" class="data-join">Freedom to make Life Choices</button>
+    </div>
+    <script src="./scatter.js"></script>
+    <script src="./worldmap.js"></script>
+</body>
+
+</html>

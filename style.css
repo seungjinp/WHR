@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+
+.map-button {
+  width: 500px;
+  height: 80px;
+  margin: auto;
+  text-align: center;
+  /* margin-left: 650px; */
+}
+
+p {
+  font-size: 14px;
+  font-family: Montserrat;
+}
+#container {
+    display: flex;
+    flex-direction: row;
+    margin: 2vw 0px 0px 5vw;
+}
+#scatter-plot {
+    position: relative;
+}
+
+.title{
+  font-weight:bold;
+  font-family:Montserrat;
+  font-size:22px;
+  margin-top:55px;
+  text-align: center;
+}
+
+
+.tooltip {
+    position: absolute;
+    visibility: hidden;
+    font-family: "Montserrat", sans-serif;
+    font-size: 9pt;
+    line-height: 14pt;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 28, 58, 0.8);
+    padding: 15px;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+}
+.axisLabel {
+    color: #01366e;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 12pt;
+}
+.axisLabel2 {
+    color: #01366e;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12pt;
+}
+.axisDescription {
+    color: #01366e;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 10pt;
+    word-wrap: break-word;
+  width: 30px;
+}
+.button {
+    border: none;
+    color: white;
+    padding: 12px 28px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    max-width:12em;
+    margin-left: 50px;
+    margin-top: 170px;
+    border-radius: 15px;
+}
+.button1 {
+    background-color: #71c6b0;
+    color: white;
+    border: 2px solid white;
+}
+.button1:hover {
+    background-color: white;
+    color: #71c6b0;
+}
+
+.overview {
+    text-align: left;
+    margin-left: 270px;
+    margin-right:200px;
+}
+.overviewdetail{
+  font-size: 18px;
+
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+label {
+    cursor: pointer;
+}
+#c1 + label:before {
+    border: 1px solid #5778a4;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c1:checked + label:before {
+    background: #5778a4;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c1:checked + label:after {
+    font-weight: bold;}
+#c2 + label:before {
+    border: 1px solid #d1615d;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c2:checked + label:before {
+    background: #d1615d;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c2:checked + label:after {
+    font-weight: bold;}
+#c3 + label:before {
+    border: 1px solid #85b6b2;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c3:checked + label:before {
+    background: #85b6b2;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c3:checked + label:after {
+    font-weight: bold;}
+#c4 + label:before {
+    border: 1px solid #6a9f58;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c4:checked + label:before {
+    background: #6a9f58;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c4:checked + label:after {
+    font-weight: bold;}
+#c5 + label:before {
+    border: 1px solid #e7ca60;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c5:checked + label:before {
+    background: #e7ca60;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c5:checked + label:after {
+    font-weight: bold;}
+#c6 + label:before {
+    border: 1px solid #a87c9f;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c6:checked + label:before {
+    background: #a87c9f;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c6:checked + label:after {
+    font-weight: bold;}
+#c7 + label:before {
+    border: 1px solid #e49444;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c7:checked + label:before {
+    background: #e49444;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c7:checked + label:after {
+    font-weight: bold;}
+#c8 + label:before {
+    border: 1px solid #f1a2a9;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c8:checked + label:before {
+    background: #f1a2a9;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c8:checked + label:after {
+    font-weight: bold;}
+#c9 + label:before {
+    border: 1px solid #967662;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c9:checked + label:before {
+    background: #967662;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c9:checked + label:after {
+    font-weight: bold;}
+#c10 + label:before {
+    border: 1px solid #b8b0ac;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .35em 0 -20px;
+    width: 16px;}
+#c10:checked + label:before {
+    background: #b8b0ac;
+    color: #fff;
+    content: "\2713";
+    text-align: center;}
+#c10:checked + label:after {
+    font-weight: bold;}
+
+
+.input {
+    margin-bottom: -10px;
+}
+#join-buttons {
+    display:flex;
+    flex-direction:row;
+    margin: 0 0vw -6vh 21vw;
+}
+.data-join {
+    margin: 10px;
+    border: 3px solid #9A77CF;
+    color: #9A77CF;
+    background-color: #FFFFFF;
+    padding: 8px 12px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    transition-duration: 0.4s;
+    border-radius: 5px;
+    width: 160px;
+}
+.data-join:hover {
+    cursor:pointer;
+    color: white;
+    background-color: #9A77CF;
+}
+#button-context {
+    margin-left: 21vw;
+    margin-top: -4vh;
+    font-size: 11pt;
+    font-style: italic;
+}
